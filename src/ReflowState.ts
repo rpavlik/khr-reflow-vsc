@@ -6,7 +6,7 @@
 
 import * as tslog from "tslog";
 import ReflowOptions from "./ReflowOptions";
-import { Regexes } from "./Regexes";
+import { REGEXES } from "./Regexes";
 
 const log: tslog.Logger = new tslog.Logger({ name: "ReflowState" });
 
@@ -112,7 +112,7 @@ export default class ReflowState {
     //  - A single letter (if breakInitial is true)
     //  - Abbreviations: 'c.f.', 'e.g.', 'i.e.' (or mixed-case versions)
     private endSentence(word: string) {
-        return !(word.slice(-1) !== "." || Regexes.endAbbrev.test(word) || (this.breakInitial && Regexes.endInitial.test(word)));
+        return !(word.slice(-1) !== "." || REGEXES.endAbbrev.test(word) || (this.breakInitial && REGEXES.endInitial.test(word)));
     }
 
     // Return true if word is a Valid Usage ID Tag anchor.
@@ -293,7 +293,7 @@ export default class ReflowState {
                 //   - VUID tags are being assigned,
                 // Try to assign VUIDs
 
-                if (Regexes.nestedVuPat.test(this.para[0])) {
+                if (REGEXES.nestedVuPat.test(this.para[0])) {
                     //                 // Check for nested bullet points. These should not be
                     //                 // assigned VUIDs, nor present at all, because they break
                     //                 // the VU extractor.
@@ -305,7 +305,7 @@ export default class ReflowState {
                     // Then add a VUID tag starting with the next free ID.
 
                     // Split the first line after the bullet point
-                    let matches = this.para[0].match(Regexes.vuPat);
+                    let matches = this.para[0].match(REGEXES.vuPat);
                     if (matches !== null && matches.groups !== null && matches.groups !== undefined) {
 
                         log.debug('findRefs: Matched vuPat on line: ' + this.para[0]);
@@ -317,7 +317,7 @@ export default class ReflowState {
                         // be correct, but should be highly reliable.
                         let vuLineMatch: RegExpMatchArray | null = null;
                         for (let vuLine in this.para) {
-                            vuLineMatch = vuLine.match(Regexes.pnamePat);
+                            vuLineMatch = vuLine.match(REGEXES.pnamePat);
                             if (vuLineMatch !== null) {
                                 break;
                             }
@@ -471,7 +471,7 @@ export default class ReflowState {
 
         // A bullet point (or something that looks like one) always ends the
         // current paragraph.
-        if (Regexes.beginBullet.test(line)) {
+        if (REGEXES.beginBullet.test(line)) {
             log.debug('addLine: line matches beginBullet, emit paragraph');
             this.emitPara();
         }
@@ -516,7 +516,7 @@ export default class ReflowState {
             // instead of inferring it from the most recent API include.
             this.apiName = '{refpage}';
             this.endParaBlockReflow(line, true);
-        } else if (Regexes.blockReflow.test(trimmed)) {
+        } else if (REGEXES.blockReflow.test(trimmed)) {
 
             // Starting or ending a block whose contents may be reflowed.
             // Blocks cannot be nested.
@@ -526,7 +526,7 @@ export default class ReflowState {
                 this.lastLine === '.Valid Usage\n');
 
             this.endParaBlockReflow(line, vuBlock);
-        } else if (Regexes.endPara.test(trimmed)) {
+        } else if (REGEXES.endPara.test(trimmed)) {
             // Ending a paragraph. Emit the current paragraph, if any, and
             // prepare to begin a new paragraph.
 
@@ -535,7 +535,7 @@ export default class ReflowState {
             // If this is an include:: line starting the definition of a
             // structure or command, track that for use in VUID generation.
 
-            let matches = line.match(Regexes.includePat);
+            let matches = line.match(REGEXES.includePat);
             if (matches && matches.groups) {
 
                 //         if matches is not None:
@@ -559,7 +559,7 @@ export default class ReflowState {
                 }
 
             }
-        } else if (Regexes.endParaContinue.test(trimmed)) {
+        } else if (REGEXES.endParaContinue.test(trimmed)) {
             // For now, always just end the paragraph.
             // Could check see if len(para) > 0 to accumulate.
 
@@ -569,7 +569,7 @@ export default class ReflowState {
             if (line.slice(0, 2) === '= ') {
                 thisTitle = true;
             }
-        } else if (Regexes.blockPassthrough.test(trimmed)) {
+        } else if (REGEXES.blockPassthrough.test(trimmed)) {
             // Starting or ending a block whose contents must not be reflowed.
             // These are tables, etc. Blocks cannot be nested.
 
@@ -630,7 +630,7 @@ export default class ReflowState {
     }
 
     private get paraBeginsWithBullet() {
-        if (Regexes.beginBullet.test(this.para[0])) {
+        if (REGEXES.beginBullet.test(this.para[0])) {
             return true;
         }
         return false;

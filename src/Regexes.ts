@@ -3,7 +3,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 
-export const Regexes = {
+export const REGEXES = {
     // Markup that always ends a paragraph
     //   empty line or whitespace
     //   [block options]
