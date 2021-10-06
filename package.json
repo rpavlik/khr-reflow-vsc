@@ -2,7 +2,7 @@
 	"name": "khr-reflow-vsc",
 	"displayName": "Khronos Asciidoctor Spec Reflow",
 	"description": "Reflow AsciiDoc files as Khronos specification tools would.",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"engines": {
 		"vscode": "^1.60.0"
 	},
@@ -14,23 +14,7 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-		"configuration": [
-			{
-				"title": "Khronos AsciiDoc Reflow",
-				"properties": {
-					"khr-reflow.enableFormat": {
-						"type": "boolean",
-						"default": true,
-						"description": "Specifies whether this code formatting provider should be enabled."
-					},
-					"khr-reflow.breakDot": {
-						"type": "boolean",
-						"default": true,
-						"description": "Specifies whether we break on periods."
-					}
-				}
-			}
-		]
+		"configuration": []
 	},
 	"publisher": "rpavlik",
 	"scripts": {
