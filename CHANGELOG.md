@@ -1,9 +1,11 @@
 # Change Log
 
-All notable changes to the "khr-reflow-vsc" extension will be documented in this file.
+<!--
+SPDX-FileCopyrightText: 2021, Collabora, Ltd.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+SPDX-License-Identifier: CC0-1.0
+-->
 
-## [Unreleased]
+## 0.1.0
 
 - Initial release

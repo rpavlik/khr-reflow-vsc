@@ -1,5 +1,11 @@
 # Khronos AsciiDoc Reflow/Formatter for VS Code
 
+<!--
+Copyright 2021, Collabora, Ltd.
+
+SPDX-License-Identifier: MIT
+-->
+
 ## Features
 
 Puts the features of the `reflow.py` script in your VS Code editor.
@@ -15,8 +21,6 @@ This extension contributes the following settings:
 -->
 
 ## Release Notes
-
-Users appreciate release notes as you update your extension.
 
 ### 1.0.0
 
