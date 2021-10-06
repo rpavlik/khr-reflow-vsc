@@ -10,17 +10,29 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:khr-reflow-vsc.helloWorld"
+		"onLanguage:asciidoc"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-		"commands": [
+		"configuration": [
 			{
-				"command": "khr-reflow-vsc.helloWorld",
-				"title": "Hello World"
+				"title": "Khronos AsciiDoc Reflow",
+				"properties": {
+					"khr-reflow.enableFormat": {
+						"type": "boolean",
+						"default": true,
+						"description": "Specifies whether this code formatting provider should be enabled."
+					},
+					"khr-reflow.breakDot": {
+						"type": "boolean",
+						"default": true,
+						"description": "Specifies whether we break on periods."
+					}
+				}
 			}
 		]
 	},
+	"publisher": "rpavlik",
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
