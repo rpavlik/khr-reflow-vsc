@@ -5,8 +5,7 @@
 
 import * as vscode from 'vscode';
 
-// import { reflowLines, stringToLines } from 'khr-reflow-ts';
-import { reflowLines, stringToLines } from './main';
+import { reflowLines, stringToLines } from '@ryan.pavlik/khr-reflow';
 
 function makeFullDocument(document: vscode.TextDocument): vscode.Range {
 	return document.lineAt(document.lineCount - 1).range.with({ start: new vscode.Position(0, 0) });
