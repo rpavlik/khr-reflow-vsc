@@ -33,7 +33,7 @@ class Reflower {
   }
   processLine(document: vscode.TextDocument, lineNumber: number): boolean {
     let line = document.lineAt(lineNumber);
-    if (this.range == null) {
+    if (this.range === null) {
       this.range = line.rangeIncludingLineBreak;
     } else {
       this.range = this.range.union(line.rangeIncludingLineBreak);
