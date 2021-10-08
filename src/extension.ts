@@ -23,16 +23,12 @@ export function activate(context: vscode.ExtensionContext) {
     provideDocumentFormattingEdits(document: vscode.TextDocument): vscode.TextEdit[] {
       const config = vscode.workspace.getConfiguration("khr-reflow");
       if (config.get("enable", true)) {
-        console.log("provideDocumentFormattingEdits");
-        const input = reflow.stringToLines(document.getText());
-        const result = reflow.reflowLines(input, null);
-        return [vscode.TextEdit.replace(makeFullDocument(document), result)];
+        return formatDocument(document);
       }
-      console.log("khr-reflow disabled");
+      // it's disabled
       return [];
     },
   });
-  console.log("Activated khr-reflow");
 }
 
 export function deactivate() {}
