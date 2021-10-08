@@ -8,17 +8,15 @@ SPDX-License-Identifier: MIT
 
 ## Features
 
-Puts the features of the `reflow.py` script in your VS Code editor.
+Puts the features of the Khronos (Vulkan, OpenXR, etc.) `reflow.py` script in
+your VS Code editor as your AsciiDoc "formatter"
 
 ## Extension Settings
 
-<!--
 This extension contributes the following settings:
 
-* `myExtension.enable`: enable/disable this extension
+* `khr-reflow.enable`: enable/disable this extension
 * `myExtension.thing`: set to `blah` to do something
-
--->
 
 ## Release Notes
 
