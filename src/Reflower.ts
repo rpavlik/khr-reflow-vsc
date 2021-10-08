@@ -10,7 +10,7 @@ export default class Reflower {
   private state: reflow.ReflowState = new reflow.ReflowState();
   private range: vscode.Range | null = null;
 
-  tryGetChunk(): null | { inputRange: vscode.Range; lines: string[]; } {
+  tryGetChunk(): null | { inputRange: vscode.Range; lines: string[] } {
     if (!this.state.isBetweenParagraphs()) {
       return null;
     }
