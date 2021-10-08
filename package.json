@@ -31,10 +31,10 @@
 	"license": "Apache-2.0",
 	"publisher": "rpavlik",
 	"scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile": "tsc -p ./",
+		"vscode:prepublish": "npm run build",
+		"build": "tsc -p ./",
 		"watch": "tsc -watch -p ./",
-		"pretest": "npm run compile && npm run lint",
+		"pretest": "npm run build && npm run lint",
 		"lint": "eslint src --ext ts",
 		"test": "node ./out/test/runTest.js",
 		"format": "prettier --write \"src/**/*.ts\""
