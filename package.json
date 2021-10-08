@@ -43,6 +43,6 @@
 		"typescript": "^4.4.3"
 	},
 	"dependencies": {
-		"@ryan.pavlik/khr-reflow": "^2.0.0"
+		"@ryan.pavlik/khr-reflow": "^2.1.0"
 	}
 }
