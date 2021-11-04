@@ -49,6 +49,7 @@
 		"@typescript-eslint/parser": "^4.31.1",
 		"@vscode/test-electron": "^1.6.2",
 		"eslint": "^7.32.0",
+		"acorn": "^8.0.0",
 		"glob": "^7.1.7",
 		"mocha": "^8.4.0",
 		"prettier": "^2.4.1",
