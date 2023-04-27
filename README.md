@@ -1,7 +1,7 @@
 # Khronos AsciiDoc Reflow/Formatter for VS Code
 
 <!--
-Copyright 2021, Collabora, Ltd.
+Copyright 2021-2023, Collabora, Ltd.
 
 SPDX-License-Identifier: MIT
 -->
@@ -16,9 +16,12 @@ your VS Code editor as your AsciiDoc "formatter"
 This extension contributes the following settings:
 
 * `khr-reflow.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
 
 ## Release Notes
+
+### 1.1.0
+
+Update to fix formatting extension documents.
 
 ### 1.0.0
 
