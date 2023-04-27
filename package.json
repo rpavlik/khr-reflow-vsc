@@ -40,7 +40,7 @@
   "license": "Apache-2.0",
   "publisher": "ryanpavlik",
   "scripts": {
-    "vscode:prepublish": "npm run build",
+    "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
     "pretest": "npm run compile && npm run lint",
