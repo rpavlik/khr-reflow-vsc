@@ -27,7 +27,7 @@ export default class Reflower {
     };
   }
   processLine(document: vscode.TextDocument, lineNumber: number): boolean {
-    let line = document.lineAt(lineNumber);
+    const line = document.lineAt(lineNumber);
     if (this.range === null) {
       this.range = line.rangeIncludingLineBreak;
     } else {
