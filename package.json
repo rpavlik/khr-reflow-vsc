@@ -9,6 +9,10 @@
   "categories": [
     "Formatters"
   ],
+  "activationEvents": [
+    "onLanguage:asciidoc",
+    "workspaceContains:*.adoc"
+  ],
   "contributes": {
     "languages": [
       {
