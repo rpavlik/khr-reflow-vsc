@@ -10,3 +10,4 @@ node_modules
 .vscode/
 main.js
 main.js.map
+*.code-workspace

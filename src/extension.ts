@@ -1,5 +1,5 @@
 // Copyright (c) 2016-2021, The Khronos Group Inc.
-// Copyright 2021 Collabora, Ltd
+// Copyright 2021-2023, Collabora, Ltd
 //
 // SPDX-License-Identifier: MIT
 
@@ -20,7 +20,7 @@ export function formatDocument(document: vscode.TextDocument): vscode.TextEdit[]
 export function activate(_context: vscode.ExtensionContext) {
   const sel: vscode.DocumentSelector = { language: "asciidoc" };
   vscode.languages.registerDocumentRangeFormattingEditProvider(sel, {
-    provideDocumentRangeFormattingEdits(document, range, options, token): vscode.TextEdit[] {
+    provideDocumentRangeFormattingEdits(document, range, _options, _token): vscode.TextEdit[] {
       const config = vscode.workspace.getConfiguration("khr-reflow");
       if (!config.get("enable", true)) {
         // it's disabled
