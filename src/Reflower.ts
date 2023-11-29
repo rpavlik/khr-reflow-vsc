@@ -4,7 +4,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
 import * as vscode from "vscode";
-import * as reflow from "@ryan.pavlik/khr-reflow";
+import * as reflow from "@rpavlik/khr-reflow";
 
 export default class Reflower {
   private state: reflow.ReflowState = new reflow.ReflowState();

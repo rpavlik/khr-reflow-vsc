@@ -6,6 +6,11 @@ SPDX-FileCopyrightText: 2021-2023, Collabora, Ltd.
 SPDX-License-Identifier: CC0-1.0
 -->
 
+## 1.2.0
+
+- Added package metadata to restore functionality in newer VSCode.
+- Update to khr-reflow version 3.0.0 (new namespace scope)
+
 ## 1.1.0
 
 - Fix formatting of extensions (updated khr-reflow)
@@ -16,4 +21,4 @@ SPDX-License-Identifier: CC0-1.0
 
 ## 1.0.0
 
-- Initial release using `@ryan.pavlik/khr-reflow` version 2.1.1
+- Initial release using khr-reflow version 2.1.1
