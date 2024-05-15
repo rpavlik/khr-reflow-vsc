@@ -37,7 +37,7 @@
       }
     }
   },
-  "main": "./out/src/extension.js",
+  "main": "./dist/extension.js",
   "repository": {
     "url": "https://github.com/rpavlik/khr-reflow-vsc"
   },
