@@ -42,7 +42,7 @@
     "url": "https://github.com/rpavlik/khr-reflow-vsc"
   },
   "license": "Apache-2.0",
-  "publisher": "ryanpavlik",
+  "publisher": "ryliepavlik",
   "scripts": {
     "vscode:prepublish": "npm run esbuild-base -- --minify",
     "esbuild-base": "esbuild ./src/extension.ts --bundle --outfile=dist/extension.js --external:vscode --format=cjs --platform=node",
