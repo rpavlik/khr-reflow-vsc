@@ -2,7 +2,7 @@
   "name": "khr-reflow-vsc",
   "displayName": "Khronos Asciidoctor Spec Reflow",
   "description": "Reflow AsciiDoc files as Khronos specification tools would.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "engines": {
     "vscode": "^1.75.0"
   },
