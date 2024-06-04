@@ -1,7 +1,7 @@
 # Change Log
 
 <!--
-SPDX-FileCopyrightText: 2021-2023, Collabora, Ltd.
+SPDX-FileCopyrightText: 2021-2024, Collabora, Ltd.
 
 SPDX-License-Identifier: CC0-1.0
 -->

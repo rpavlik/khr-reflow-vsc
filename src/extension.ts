@@ -1,5 +1,5 @@
 // Copyright (c) 2016-2021, The Khronos Group Inc.
-// Copyright 2021-2023, Collabora, Ltd
+// Copyright 2021-2024, Collabora, Ltd
 //
 // SPDX-License-Identifier: MIT
 
