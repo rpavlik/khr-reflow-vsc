@@ -6,6 +6,8 @@ Copyright 2021-2024, Collabora, Ltd.
 SPDX-License-Identifier: MIT
 -->
 
+Maintained at <https://github.com/rpavlik/khr-reflow-vsc>
+
 Installable from
 <https://marketplace.visualstudio.com/items?itemName=RyliePavlik.khr-reflow-vscode>
 
