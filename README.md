@@ -19,7 +19,7 @@ This extension contributes the following settings:
 
 ## Release Notes
 
-### 1.2.0
+### 1.2.0, 1.2.1
 
 Fix functionality for newer VS Code, correct name.
 
