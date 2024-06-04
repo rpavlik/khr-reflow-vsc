@@ -6,6 +6,9 @@ Copyright 2021-2024, Collabora, Ltd.
 SPDX-License-Identifier: MIT
 -->
 
+Installable from
+<https://marketplace.visualstudio.com/items?itemName=RyliePavlik.khr-reflow-vscode>
+
 ## Features
 
 Puts the features of the Khronos (Vulkan, OpenXR, etc.) `reflow.py` script in
