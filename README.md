@@ -9,7 +9,11 @@ SPDX-License-Identifier: MIT
 Maintained at <https://github.com/rpavlik/khr-reflow-vsc>
 
 Installable from
-<https://marketplace.visualstudio.com/items?itemName=RyliePavlik.khr-reflow-vscode>
+[Visual Studio Marketplace listing for khr-reflow-vscode][vsmarketplace] or
+[OpenVSX listing for khr-reflow-vscode][openvsx]
+
+[vsmarketplace]:https://marketplace.visualstudio.com/items?itemName=RyliePavlik.khr-reflow-vscode
+[openvsx]: https://open-vsx.org/extension/RyliePavlik/khr-reflow-vscode
 
 ## Features
 
